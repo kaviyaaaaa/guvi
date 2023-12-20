@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form SignUp</title>
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <script defer src="js/register.js"></script>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container registration">
+        <header>
+          <h1 class="signupkey">SignUp</h1>
+        </header>
+        <form id="form" action="php/register.php" method="POST">
+          <div class="form-body">
+            <div class="input_forms">
+              <i class="fa fa-user icon"></i>
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="full_name"
+                name="fname"
+                required
+              />
+              <p class="error"></p>
+            </div>
+            <div class="input_forms">
+              <i class="fa fa-envelope icon"></i>
+              <label for="Email">Your Email</label>
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                class="email_id"
+                name="email"
+                required
+              />
+              <p class="error"></p>
+            </div>
+            <div class="input_forms">
+              <i class="fa fa-lock icon"></i>
+              <label for="Password">Your New Password</label>
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                class="password"
+                name="pass"
+                required
+              />
+             
+              <p class="error"></p>
+            </div>
+            <div class="input_forms">
+              <i class="fa fa-lock icon"></i>
+              <label for="Password">Type your password again</label>
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                id="repeat_password"
+                required
+              />
+            
+              <p class="error"></p>
+              <div class="input_forms">
+                <label for="gender">Gender</label><br>
+              <select class="dropdown" required>
+                <option value="" disabled="disabled" selected="selected">Please select your gender</option>
+                <option value="1" name="gender">Male</option>
+                <option value="2" name="gender">Female</option>
+            </select>
+
+                <p class="error"></p>
+                <div class="input_forms">
+                  <i class="fa fa-cal icon"></i>
+                  <label for="my_date_picker">DOB</label>
+                  <input
+                  type="date"
+                    placeholder="Enter your DOB"
+                    id="my_date_picker"
+                    name="dob"
+                    required/>
+   
+              </div>
+            </div>
+            <br>  
+            <input class="btn" type="submit" value="Sign Up" />
+          </div>
+        </form>
+        <footer class="loginal">
+          <p class="succesmsgRegister hidden" style="color: darkblue;">User Registered Successfully</p>
+          <span>Already have a Account?</span>
+          <button type="button" class="bttn login" onclick="javascript:clickinner(this)">Login</button>
+        </footer> 
+      </div>
+      <!-- Login Form  -->
+
+    </div>
+  </body>
+</html>

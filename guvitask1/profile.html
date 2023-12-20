@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Details Viewer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container bg">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>User Details</h2>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Name:</td>
+                  <td><span id="name"><?php echo $user['name']; ?></span></td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><span id="email"><?php echo $user['email']; ?></span></td>
+                </tr>
+                <tr>
+                  <td>Date of Birth:</td>
+                  <td><span id="dob"><?php echo $user['dob']; ?></span></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><span id="gender"><?php echo $user['gender']; ?></span></td>
+                  </tr>
+                <!-- Add more fields as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
